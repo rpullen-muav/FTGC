@@ -1,0 +1,48 @@
+CoTRX v0.6.1 20201106:
+- enabled compass
+-changed range from 0-360 to -180-180
+-removed N marker and replaced with TGT
+-removed pitch tilt cross
+-added distance readout
+
+CoTRX v0.6.0 20201104:
+-brancjed for OSD compassfor vector in target functionality
+-added compass class
+-using geo heading function in Node object
+-compass not enabled yet
+
+CoTRX v0.5.2 20201029:
+-added add and drop functionality for multicast group
+-fixed table reset, button is now disable when connected, resetting clears node dict
+
+CoTRX v0.5.1 20201028:
+-support complex messages, a little buggy
+- message is now in binary with format of [sender] [msg type] [msg len] [message]
+
+
+CoTRX v0.5 20201026:
+-incorporated gimbal heartbeat messages
+-parsing CoT and Hartbeat messages
+-incorporated Node object that haold a list of the message type it parses
+-added buttons to name cell of cot table, non funtional
+-disconnected reset table button
+
+CoTRX v0.3 20201025:
+-read CoT messages from a hard coded second network
+-created FTCam object for gimbal messages, not implemented
+
+CoTRX v0.0 20201019:
+-Receive cot messages on the MPU5 CoT multicast address/port 239.23.212.230:18999
+-Show CoT details in node table
+-view raw CoT messaged in viewer pane
+
+todo:
+-add gui functionality to add networks at will
+-displsy list of connected networks
+Done-fix resetting of table(need to empty dict)
+Done-implement FTCam object parser
+-highlight tracked node
+-switch between tracked nodes
+-track stale data
+-camera viewer
+-launch terminal in second form
